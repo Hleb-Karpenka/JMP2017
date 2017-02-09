@@ -39,7 +39,7 @@ public class Animal {
 	
 	public void sleep()
 	{
-		System.out.println(name + "is fast asleep");
+		System.out.println(name + " is fast asleep");
 	}			
 	
 	public void eat(Ifood food){
