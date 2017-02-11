@@ -10,8 +10,8 @@ public class Main {
 		Cat cat = new Cat("Ginger", "Murka", 1.5, "Persian");
 		
 		cat.mew();
-		cat.eat(egg);
-		cat.sleep();
+		cat.eat(egg); //DRY principle in action
+		cat.sleep();  //DRY principle in action
 
 	}
 
