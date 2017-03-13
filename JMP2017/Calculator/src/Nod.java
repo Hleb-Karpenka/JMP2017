@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * Created by Gleb88 on 12.03.2017.
  */
@@ -8,6 +6,7 @@ public class Nod implements INod {
     String result;
     INod leftPart;
     INod rightPart;
+    INod bracketPart;
     String operation;
 
 
@@ -15,6 +14,9 @@ public class Nod implements INod {
     }
 
     public Nod(String src) {
+
+        src = processBrackets(src);
+
         if(src.contains(Operation.ADDITION)){
             String[] addParts = src.split(Operation.REGEXP_ADDITION,2);
             leftPart = new Nod(addParts[0]);
@@ -49,6 +51,39 @@ public class Nod implements INod {
         result = src;
     }
 
+    private String processBrackets(String src) {
+
+        while (src.contains("("))
+        {
+            char searchChar1 = '(';
+            char searchChar2 = ')';
+            int count = 0;
+            int starti = src.indexOf("(");
+            int endI = 0;
+
+            for (int i = starti; i < src.length(); ++i)
+            {
+                if (src.charAt(i) == searchChar1) {
+                    count++;
+                }
+                if (src.charAt(i) == searchChar2) {
+                    count--;
+                }
+                if (count == 0) {
+                    endI = i;
+                    break;
+                }
+            }
+            String substring = src.substring(starti+1, endI);
+            bracketPart = new Nod(substring);
+            double bracketPartResult = bracketPart.calculate();
+            src = src.substring(0, starti).concat(String.valueOf(bracketPartResult)).concat(src.substring(endI+1,src.length()));
+            /*substring = "("+substring.concat(")");
+            src.replaceAll(substring, String.valueOf(bracketPartResult));*/
+        }
+        return src;
+    }
+
 
     public INod getLeftPart() {
         return leftPart;
@@ -81,6 +116,7 @@ public class Nod implements INod {
             return Double.parseDouble(result);
         }
 
+
         double leftN = leftPart.calculate();
         double rightN = rightPart.calculate();
         return simpleCalc(leftN, rightN, operation);
@@ -102,4 +138,5 @@ public class Nod implements INod {
         }
         return 0;
     }
+
 }
