@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="A" class="com.jmp.beans.ClassA">
+        <property name="field1" value="hello "/>
+        <property name="field2" value="world!"/>
+    </bean>
+
+    <bean id="B" class="com.jmp.beans.ClassB">
+        <constructor-arg index="0" value="Hi "/>
+        <constructor-arg index="1" value="world!"/>
+    </bean>
+
+    <bean id="C" class="com.jmp.beans.ClassC" scope="singleton">
+        <constructor-arg index="0" value="Hey "/>
+        <constructor-arg index="1" ref="D"/>
+    </bean>
+
+    <bean id="D" class="com.jmp.beans.ClassD" scope="prototype" >
+        <constructor-arg index="0" value="new "/>
+        <constructor-arg index="1" value="world!"/>
+    </bean>
+
+    <bean id="E" class="com.jmp.beans.ClassE" >
+        <replaced-method name="method1" replacer="D">
+            <arg-type>String</arg-type>
+        </replaced-method>
+    </bean>
+
+    <bean id="F" class="com.jmp.beans.ClassF" init-method="init" >
+        <constructor-arg index="0" value="welcome"/>
+    </bean>
+
+</beans>
+
+
+
