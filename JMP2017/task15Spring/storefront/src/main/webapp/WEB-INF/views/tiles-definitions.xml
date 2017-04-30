@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition extends="default" name="home">
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<definition extends="default" name="login">
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+
+	<definition extends="default" name="registration">
+		<put-attribute name="body" value="/WEB-INF/views/registration.jsp" />
+	</definition>
+
+	<definition extends="default" name="regsecondstep">
+		<put-attribute name="body" value="/WEB-INF/views/regsecondstep.jsp" />
+	</definition>
+
+	<definition extends="default" name="customermanagepanel">
+		<put-attribute name="body"
+			value="/WEB-INF/views/customermanagepanel.jsp" />
+	</definition>
+
+	<definition extends="default" name="customerpanel/list">
+		<put-attribute name="body"
+			value="/WEB-INF/views/customerpanel/list.jspx" />
+	</definition>
+	<definition extends="default" name="customerpanel/show">
+		<put-attribute name="body"
+			value="/WEB-INF/views/customerpanel/show.jsp" />
+	</definition>
+
+	<definition extends="default" name="customerpanel/update">
+		<put-attribute name="body"
+			value="/WEB-INF/views/customerpanel/edit.jsp" />
+	</definition>
+	<definition extends="default" name="customerpanel/create">
+		<put-attribute name="body"
+			value="/WEB-INF/views/customerpanel/edit.jsp" />
+	</definition>
+
+
+
+</tiles-definitions>

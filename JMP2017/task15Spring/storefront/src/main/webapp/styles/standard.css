@@ -1,0 +1,606 @@
+@import url("messages/messages.css");
+
+/* main elements */
+
+td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #e62222;
+}
+
+body {
+    background-color: #2790b9;
+    text-align: center;
+}
+
+
+
+#userinfo {
+    float: right;
+    margin: 5;
+    padding: 5px 5px;
+}
+
+#language {
+    margin: 5;
+    padding: 5px 5px;
+}
+
+/* header and footer elements */
+
+table.navigation {
+    border: 0px;
+}
+
+label {
+    width:100px;
+    float:left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+input {
+    height:20px;
+}
+
+input, textarea, select {
+    border:1px solid #B3B3B3;
+}
+
+input.image {
+    border: none;
+    height: auto;
+    vertical-align: middle;
+}
+
+submit {
+    height:25px;
+}
+
+div .box {
+    display:block;
+    margin-left:105px;
+}
+
+/* menu elements*/
+
+a.menu, a.menu:link, a.menu:visited {display:block; width:150px; height:25px;}
+
+/* text styles */
+
+h1,h2,h3 {
+    font-family: Helvetica, sans-serif;
+    color: #7db223;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+h3 {
+    font-size: 15px;
+    line-height: 21px;
+    color:#555;
+}
+
+h4 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.errors {
+    color: red;
+    font-weight: bold;
+    display: block;
+    margin-left: 105px;
+}
+
+a {
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+a img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: #EFEFEF;
+}
+
+a:link {
+    color: #7db223;
+}
+
+a:hover {
+    color: #456314;
+}
+
+a:active {
+    color: #7db223;
+}
+
+a:visited {
+    color: #7db223;
+}
+
+li {
+    padding-top: 5px;
+    text-align: left;
+}
+
+ul li {
+    margin:0 0 0.25em 0;
+    padding:0;
+}
+/* table elements */
+
+table {
+    background: #EEEEEE;
+    margin: 2px 0 0 0;
+    border: 1px solid #BBBBBB;
+    border-collapse: collapse;
+    width: 100%
+}
+
+table table {
+    margin: -5px 0;
+    border: 0px solid #e0e7d3;
+    width: 100%;
+}
+
+table td,table th {
+    padding: 2px;
+    border: 1px solid #CCCCCC;
+}
+
+table td form {
+    text-align:center;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+table th {
+    font-size: 0.9em;
+    text-align: left;
+    font-weight: bold;
+    color: #FFF;
+    background: #999;
+}
+
+table thead {
+    font-weight: bold;
+    font-style: italic;
+    background-color: #BBBBBB;
+}
+
+table a:link {color: #303030;}
+
+.utilbox {width: 18px;}
+
+caption {
+    caption-side: top;
+    width: auto;
+    text-align: left;
+    font-size: 12px;
+    color: #848f73;
+    padding-bottom: 4px;
+}
+
+fieldset {
+    background: #e0e7d3;
+    padding: 8px;
+    padding-bottom: 22px;
+    border: none;
+    width: 560px;
+}
+
+fieldset label {
+    width: 70px;
+    float: left;
+    margin-top: 1.7em;
+    margin-left: 20px;
+}
+
+fieldset textfield {
+    margin: 3px;
+    height: 20px;
+    background: #e0e7d3;
+}
+
+fieldset textarea {
+    margin: 3px;
+    height: 165px;
+    background: #e0e7d3;
+}
+
+fieldset input {
+    margin: 3px;
+    height: 20px;
+    background: #e0e7d3;
+}
+
+fieldset table {
+    width: 100%;
+}
+
+fieldset th {
+    padding-left: 25px;
+}
+
+.table-buttons {
+    background-color:#fff;
+    border:none;
+}
+
+.table-buttons td {
+    border:none;
+}
+
+.submit input {
+    border: 1px solid #BBBBBB;
+    color:#777777;
+    padding:2px 7px;
+    font-size:11px;
+    text-transform:uppercase;
+    font-weight:bold;
+    height:24px;
+}
+
+.updated {
+    background:#ecf1e5;
+    font-size:11px;
+    margin-left:2px;
+    border:4px solid #ecf1e5;
+}
+
+.updated td {
+    padding:2px 8px;
+    font-size:11px;
+    color:#888888;
+}
+
+.dijitArrowButton {
+    height: 20px;
+}
+
+.dijitTextArea{
+    min-height:5.5em !important;
+    max-height:22em !important;
+    overflow-y: auto !important;
+    max-width: 175px;
+}
+
+.RichTextEditable{
+    min-height:18em !important;
+    max-height:18em !important;
+}
+
+.flag {
+    height: 11px;
+    width: 16px;
+}
+
+
+/*
+
+	StyleSheet for GreenGrass Template
+	by David Herreman
+	http://www.free-css-templates.com
+
+*/
+h4 {
+	font-size: 12px;
+	color: #50922C;
+	text-align: left;
+	background-color: #fff;
+}
+
+#contactInfo {
+    float: left;
+    text-align: left;
+}
+.date {
+	text-align: right;
+	color: #808080;
+	font-size: 11px;
+	background-color: #fff;
+}
+
+.date a {
+	color: #245917;
+	background-color: #fff;
+}
+
+
+#content h2 {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0px;
+	color: #245917;
+	background-color: #fff;
+}
+
+#content h4 {
+	margin: 0;
+	padding-bottom: 0px;
+	font-size: 12px;
+	color: #50922C;
+	background-color: #fff;
+}
+
+#content a {
+color: #50922C;
+text-decoration: none;
+background-color: #fff;
+}
+
+#content p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	background-color: #fff;
+}
+
+#content .title
+{
+    margin: 0;
+	padding: 0;
+	padding-bottom: 0px;
+	font-size: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	color: #245917;
+	background-color: #fff;
+}
+
+#page-container {
+	width: 760px;
+	background: #fff;
+	text-align: left;
+	margin: auto;
+	background: #fff url("custom/bg2.gif") top center repeat-y;
+	background-color: #fff;
+}
+
+body {
+	font-family: Arial, Helvetica, Verdana, Sans-serif;
+	font-size: 12px;
+	color: #666666;
+	background: #c9f194;
+	text-align: center;
+}
+
+#menu {
+    text-align: center;
+	font-size: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#menu a {
+	width: 180px;
+	color: #B60400;
+	font-size: 9pt;
+	font-weight: bold;
+	padding: 0 0 0 10px;
+	background-color: #fff;
+}
+
+#menu a:hover {
+	color: #B60400;
+	font-size: 9pt;
+	font-weight: bold;
+	padding: 0 0 0 0px;
+}
+
+ul#menu
+{
+	padding: 0px ;
+	list-style-type: none ;
+	text-align: left;
+}
+
+ul#menu li
+{
+	margin: 0px 0 0 0 ;
+	padding: 0 ;
+}
+
+ul#menu li a
+{
+	display: block ;
+	width: 175px ;
+	line-height: 29px ;
+	color: #B60400;
+	text-indent: +30px ;
+	text-decoration: none ;
+	background: url("custom/li.gif") no-repeat +10px +8px;
+}
+
+
+ul#menu li a:hover
+{
+	background: #eaeaea;
+	text-indent: +40px ;
+	line-height: 29px ;
+	background: #ebebeb url("custom/i.gif") no-repeat +10px +8px;
+}
+
+
+
+#header {
+	background: #fff url("custom/header.gif") top center no-repeat;
+	height: 65px;
+	padding-top: 18px;
+	padding-left: 28px;
+	padding-right: 20px;
+    text-align: right;
+	color: #ccc;
+	font-size: 10px;
+	background-color: #fff;
+}
+
+#header .comment {
+margin: 14px 0px 0px 0px;
+color: #245917;
+font-size: 11px;
+}
+
+#header input.search {
+	width: 292px;
+	border: 0;
+	background: #FFF url("custom/input.gif") no-repeat;
+	padding: 4px;
+	color: #70b24C;
+}
+
+
+#header input.submit {
+	border: 0px;
+	background-color: #A3BB90;
+	padding: 0px 0;
+	width: 65px;
+	margin: 0 15px 1px 0;
+	color: #245917;
+	font: bold 1em Arial, Sans-Serif;
+}
+
+#header a {
+ color: #808080;
+ background-color: #fff;
+}
+
+#prefooter {
+	clear: both;
+	background: #fff url("custom/prefooter.gif") center no-repeat;
+	height: 169px;
+	padding: 0px 0px 0px 70px;
+	background-color: #0f0;
+}
+
+
+#prefooter p {
+    width: 350px;
+    padding: 12px 0px 10px 0px;
+    margin: 0px 0px 3px 0px;
+    border-bottom: 1px solid #ada;
+}
+
+
+#prefooter a {
+	color: #B60400;
+	font-size: 9pt;
+	font-weight: bold;
+	padding: 0 0px 0px 0px;
+}
+
+#hrgreen {
+ background: #fff url("custom/hr.gif") no-repeat;
+ margin: 13px;
+ height: 1px;
+ background-color: #fff;
+}
+
+* html #hrgreen {
+ background: #fff url("custom/hr.gif") no-repeat;
+ margin-left: 60px;
+ height: 1px;
+ background-color: #fff;
+}
+
+
+#content {
+	margin-right: 280px;
+	line-height: 18px;
+	padding-left: 20px;
+}
+
+#content .padding {
+	background-color: #fff;
+}
+
+#sidebar-a {
+	float: right;
+	width: 228px;
+	line-height: 18px;
+	margin-right: 10px;
+	background: #fff url("custom/bg_nav.gif") right top no-repeat;
+	background-color: #fff;
+}
+
+
+#sidebar-a p {
+    width: 173px ;
+    margin-left: 30px;
+	text-decoration: none ;
+	text-align: left;
+	background-color: #fff;
+}
+
+
+* html #sidebar-a p {
+  width: 173px;
+  margin-left: 75px;
+  margin-top: -15px;
+  text-decoration: none ;
+  text-align: left;
+  background-color: #fff;
+  }
+
+
+#sidebar-a .padding {
+	margin: 10px 0px 10px 0px;
+	padding: 35px 20px 0px 30px;
+}
+
+
+#footer {
+	background: #ebebeb url("custom/footer2.gif") top no-repeat;
+	font-family: Tahoma, Arial, Helvetica, Sans-serif;
+	font-size: 11px;
+	color: #505050;
+	padding: 8px 0px;
+	text-align: center;
+	background-color: #0f0;
+}
+
+#footer a {
+	color: #245917;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #db6d16;
+}
+
+#footer #copyright {
+	padding-top: 1px;
+}
+
+.hidden {
+	display: none;
+}
+label {
+    width:150px;
+  float:left;
+  padding-right:10px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/*
+Standart*/
